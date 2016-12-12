@@ -15,6 +15,7 @@ module.exports = function(req, res) {
     return;
   }
 
+  //This searches the SeatGeek api for 10 events that are in the city, have available seats and are less than 100 dollars
   var response;
   try {
     response = sync.await(request({

@@ -8,9 +8,10 @@ var _ = require('underscore');
 module.exports = function(req, res) {
   var term = req.query.text.trim();
 
+  //creates a link to the event
   var html = '<a href=\"' + term + '\">' + term + '</a>';
   res.json({
-  body: html,
-  raw: true
+    body: html,
+    raw: true
   });
 };
